@@ -6,3 +6,6 @@ if(isset($_COOKIE[session_name()])) {
 }
 session_destroy();
  ?>
+ php.ini
+ >>
+session.gc_maxlifetime (default 24min)
