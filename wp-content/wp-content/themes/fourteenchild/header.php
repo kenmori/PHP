@@ -24,20 +24,9 @@
 	<title><?php wp_title( '|', true, 'right' ); ?></title>
 	<link rel="profile" href="http://gmpg.org/xfn/11">
 	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
-	<link href="<?php bloginfo('template_directory'); ?>/images/favicon.png" rel="shortcut icon" />
-	<link rel="apple-touch-icon" href="http://kenjimorita.jp/wp-content/themes/twentyfourteen/images/apple-touch-icon.png" />
-	<!--[if lt IE 9]>
-	<script src="<?php echo get_template_directory_uri(); ?>/js/html5.js"></script>
-	<![endif]-->
+	<link rel="shortcut icon" href="./images/favicon.png" />
+	<link rel="apple-touch-icon" href="./images/apple-touch-icon.png" />
 	<?php wp_head(); ?>
-<!-- 	<link rel="stylesheet" href="http://kenjimorita.jp/wp-content/themes/twentyfourteen/css/snap.css">
- -->
- 	<script type="text/javascript">
-	window.onload = function() { setTimeout(scrollTo, 175, 0, 1); }
-	</script>
-	<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-	<!--<script type="text/javascript" src="http://kenjimorita.jp/wp-content/themes/twentyfourteen/js/snap.min.js"></script>-->
-	<script type="text/javascript" src="//typesquare.com/accessor/script/typesquare.js?QcloNBtHR6U%3D" charset="utf-8"></script>
 	<meta name="google-site-verification" content="aF7Nnl0otsSvBoLQc2c6ymTPu2K8bcv_292nRkpOUTA" />
 </head>
 

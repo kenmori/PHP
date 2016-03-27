@@ -35,9 +35,9 @@
  	<script type="text/javascript">
 	window.onload = function() { setTimeout(scrollTo, 100, 0, 1); }
 	</script>
-	<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<!-- <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script> -->
 	<!--<script type="text/javascript" src="http://kenjimorita.jp/wp-content/themes/twentyfourteen/js/snap.min.js"></script>-->
-	<script type="text/javascript" src="//typesquare.com/accessor/script/typesquare.js?QcloNBtHR6U%3D" charset="utf-8"></script>
+	<!-- <script type="text/javascript" src="//typesquare.com/accessor/script/typesquare.js?QcloNBtHR6U%3D" charset="utf-8"></script> -->
 	<meta name="google-site-verification" content="aF7Nnl0otsSvBoLQc2c6ymTPu2K8bcv_292nRkpOUTA" />
 </head>
 
