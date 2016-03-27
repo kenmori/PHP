@@ -1,0 +1,83 @@
+/*
+Theme Name:fourteenchild
+Author:moritakenji
+Template:twentyfourteen
+*/
+@import url('../twentyfourteen/style.css');
+
+
+/*共通*/
+h1.site-title{
+font-family: "ヒラギノ明朝 W6 JIS2004";
+}
+.entry-meta .tag-links a{
+	background:#BBBBBB;
+}
+.entry-meta .tag-links a:before{
+	border-right: 8px solid #BBBBBB;
+}
+.site-content footer.entry-meta{
+	padding-left:0;
+	padding-bottom:2%;
+	display:none;
+
+ }
+ /*アイキャッチの非表示*/
+
+/*PC*/
+@media screen and (min-width: 673px){
+	.post-thumbnail{
+		display:none;
+	}
+}
+/*タブレット*/
+@media screen and (min-width: 401px) {
+	.site{
+		margin:0 auto;
+	}
+	.nav-menu{
+		font-size:13px;
+	}
+	.entry-meta .tag-links a{
+		background:#BBBBBB;
+	}
+	.entry-meta .tag-links a:before{
+		border-right: 8px solid #BBBBBB;
+	}
+	.post-thumbnail{
+	display:none;
+}
+}
+
+
+/*スマホ*/
+@media screen and (max-width: 400px){
+	#categories-2 li {
+	padding: 5% 0px;
+	}
+	#content .entry-meta{
+		display:block;
+	}
+	.content-sidebar{
+		padding:0;
+	}
+	.primary-sidebar{
+		padding-top: 5px;
+	}
+	.paging-navigation{
+		margin: 20px 0;
+	}
+	/*アイキャッチ*/
+	 .site-content footer.entry-meta{
+		padding-left:0;
+		padding-bottom:2%;
+		display:none;
+	 }
+	 .list-view .site-content .post-thumbnail img{
+	 	margin:0px 10px 3px 0;
+		width: 80px;
+	 }
+	 .single .post-thumbnail{
+		display:none;
+	}
+}

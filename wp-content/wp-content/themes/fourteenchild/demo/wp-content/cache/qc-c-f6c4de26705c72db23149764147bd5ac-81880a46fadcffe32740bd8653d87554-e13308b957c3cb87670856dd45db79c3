@@ -1,0 +1,345 @@
+a:7:{i:0;s:24:"X-Powered-By: PHP/5.3.15";i:1;s:38:"Expires: Wed, 11 Jan 1984 05:00:00 GMT";i:2;s:51:"Cache-Control: no-cache, must-revalidate, max-age=0";i:3;s:16:"Pragma: no-cache";i:4;s:44:"X-Pingback: http://kenjimorita.jp/xmlrpc.php";i:5;s:38:"Content-Type: text/html; charset=UTF-8";i:6;s:52:"Link: <http://kenjimorita.jp/?p=5317>; rel=shortlink";}<!--headers--><!DOCTYPE html>
+<!--[if IE 7]><html class="ie ie7" lang="ja"><![endif]-->
+<!--[if IE 8]><html class="ie ie8" lang="ja"><![endif]-->
+<!--[if !(IE 6) | !(IE 7) | !(IE 8)  ]><!-->
+<html dir="ltr" lang="ja">
+<!--<![endif]-->
+<head>
+<meta charset="UTF-8">
+<meta name="generator" content="WordPress 3.9.2">
+<meta name="viewport" content="width=device-width">
+<title>備忘録:5 Array、Stringオブジェクトメソッド | もりたけんじの武骨日記</title>
+<link rel="dns-prefetch" href="//fonts.googleapis.com/css?family=Lato%3A300%2C400%2C700%2C900%2C300italic%2C400italic%2C700italic">
+<link rel="profile" href="http://gmpg.org/xfn/11">
+<link rel="pingback" href="http://kenjimorita.jp/xmlrpc.php">
+<link href="http://kenjimorita.jp/wp-content/themes/twentyfourteen/images/favicon.png" rel="shortcut icon">
+<link rel="apple-touch-icon" href="http://kenjimorita.jp/wp-content/themes/twentyfourteen/images/apple-touch-icon.png">
+<link rel="alternate" type="application/rss+xml" title="もりたけんじの武骨日記 &raquo; フィード" href="http://kenjimorita.jp/feed/">
+<link rel="alternate" type="application/rss+xml" title="もりたけんじの武骨日記 &raquo; コメントフィード" href="http://kenjimorita.jp/comments/feed/">
+<link rel="alternate" type="application/rss+xml" title="もりたけんじの武骨日記 &raquo; 備忘録:5 Array、Stringオブジェクトメソッド のコメントのフィード" href="http://kenjimorita.jp/bibouroku_5/feed/">
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://kenjimorita.jp/xmlrpc.php?rsd">
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://kenjimorita.jp/wp-includes/wlwmanifest.xml">
+<link rel="prev" title="備忘録:4「文字列の最後の部分が,だった場合それを抜いた文字列を抽出する」等" href="http://kenjimorita.jp/bibouroku_4/">
+<link rel="next" title="中東の標識" href="http://kenjimorita.jp/tyuutounohyousiki/">
+<link rel="canonical" href="http://kenjimorita.jp/bibouroku_5/">
+<link rel="shortlink" href="http://kenjimorita.jp/?p=5317">
+<link rel="stylesheet" id="twentyfourteen-lato-css" href="//fonts.googleapis.com/css?family=Lato%3A300%2C400%2C700%2C900%2C300italic%2C400italic%2C700italic" type="text/css" media="all">
+<link rel="stylesheet" id="genericons-css" href="http://kenjimorita.jp/wp-content/themes/twentyfourteen/genericons/genericons.css?ver=3.0.2" type="text/css" media="all">
+<link rel="stylesheet" id="twentyfourteen-style-css" href="http://kenjimorita.jp/wp-content/themes/fourteenchild/style.css?ver=3.9.2" type="text/css" media="all">
+<!--[if lt IE 9]><link rel="stylesheet" id="twentyfourteen-ie-css" href="http://kenjimorita.jp/wp-content/themes/twentyfourteen/css/ie.css?ver=20131205" type="text/css" media="all"><![endif]-->
+<script type="text/javascript" src="http://kenjimorita.jp/wp-includes/js/jquery/jquery.js?ver=1.11.0"></script>
+<script type="text/javascript" src="http://kenjimorita.jp/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.2.1"></script>
+<!--[if lt IE 9]><script src="http://kenjimorita.jp/wp-content/themes/twentyfourteen/js/html5.js"></script>
+<![endif]-->
+<!-- 	<link rel="stylesheet" href="http://kenjimorita.jp/wp-content/themes/twentyfourteen/css/snap.css">
+ -->
+ 	<script type="text/javascript">
+	window.onload = function() { setTimeout(scrollTo, 175, 0, 1); }
+	</script>
+	<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<!--<script type="text/javascript" src="http://kenjimorita.jp/wp-content/themes/twentyfourteen/js/snap.min.js"></script>-->
+	<script type="text/javascript" src="//typesquare.com/accessor/script/typesquare.js?QcloNBtHR6U%3D" charset="utf-8"></script>
+	<meta name="google-site-verification" content="aF7Nnl0otsSvBoLQc2c6ymTPu2K8bcv_292nRkpOUTA" />
+</head>
+
+<body class="single single-post postid-5317 single-format-standard custom-background header-image singular">
+	<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-47704758-1', 'kenjimorita.jp');
+  ga('send', 'pageview');
+
+</script><div id="page" class="hfeed site">
+	
+
+
+	<div id="main" class="site-main">
+
+	<div id="primary" class="content-area">
+		<div id="content" class="site-content" role="main">
+			
+<article id="post-5317" class="post-5317 post type-post status-publish format-standard has-post-thumbnail hentry category-web tag-web has-post-thumbnail">
+	
+	<div class="post-thumbnail">
+	<img width="108" height="108" src="http://kenjimorita.jp/wp-content/plugins/lazy-load/images/1x1.trans.gif" data-lazy-src="http://kenjimorita.jp/wp-content/uploads/2014/06/Screenshot_1-108x108.jpg" class="attachment-post-thumbnail wp-post-image" alt="javascript備忘録" /><noscript><img width="108" height="108" src="http://kenjimorita.jp/wp-content/uploads/2014/06/Screenshot_1-108x108.jpg" class="attachment-post-thumbnail wp-post-image" alt="javascript備忘録" /></noscript>	</div>
+
+	
+	<header class="entry-header">
+				<div class="entry-meta">
+			<span class="cat-links"><a href="http://kenjimorita.jp/category/web%e5%82%99%e5%bf%98%e9%8c%b2/" title="web備忘録 の投稿をすべて表示" rel="category tag">web備忘録</a></span>
+		</div>
+		<h1 class="entry-title">備忘録:5 Array、Stringオブジェクトメソッド</h1>		<footer class="entry-meta"><span class="tag-links"><a href="http://kenjimorita.jp/tag/web/" rel="tag">web</a></span></footer>
+		<div class="entry-meta">
+			<span class="entry-date"><a href="http://kenjimorita.jp/bibouroku_5/" rel="bookmark"><time class="entry-date" datetime="2014-06-23T00:04:21+00:00">2014年6月23日</time></a></span> <span class="byline"><span class="author vcard"><a class="url fn n" href="http://kenjimorita.jp/author/kenjimorita/" rel="author">kenjimorita</a></span></span>			<span class="comments-link"><a href="http://kenjimorita.jp/bibouroku_5/#comments" title="備忘録:5 Array、Stringオブジェクトメソッド へのコメント">2件のコメント</a></span>
+					</div><!-- .entry-meta -->
+	</header><!-- .entry-header -->
+
+		<div class="entry-content">
+		<p>// var str1 = &#8216;にわにはにわにわとりがいる&#8217;;<br />
+// document.writeln(str1.indexOf(&#8216;にわ&#8217;));//0(先頭から検索)<br />
+// document.writeln(str1.lastIndexOf(&#8216;にわ&#8217;));//6(末尾から検索)<br />
+// document.writeln(str1.indexOf(&#8216;にわ&#8217;,3));//4文字目から右方向に検索<br />
+// document.writeln(str1.lastIndexOf(&#8216;わ&#8217;,5));//4(6文字目から左方向検索)<br />
+// document.writeln(str1.indexOf(&#8216;ガーデン&#8217;));//-1（不一致）</p>
+<p>// var str2 = &#8216;Wingsプロジェクト&#8217;;<br />
+// document.writeln(str2.charAt(4));//sを抽出<br />
+// document.writeln(str2.slice(5,8);//プロジ(6~8文字目を抽出)<br />
+// document.writeln(str2.substring(5,8));//プロｼﾞ(6~8文字目を抽出)<br />
+// document.writeln(str2.substr(5,3));//6番目から3文字を抽出<br />
+// document.writeln(str2.split(&#8216;s&#8217;));//Wing,プロジェクト<br />
+// document.writeln(str1.split(&#8216;わ&#8217;,3));//に,にはに,に（3つに分割）</p>
+<p>// document.writeln(&#8216;トップ&#8217;,anchor(&#8216;top&#8217;));//<a name="top">トップ</a><br />
+// document.writeln(str2.link(&#8216;http://www.wings.mns&#8217;));<br />
+// document.writeln(&#8217;10&#8242;,sub());//<sub>10</sub>下付き文字<br />
+// document.writeln(&#8217;10&#8242;,sup());//<sup>10</suo>上付き文字</p>
+<p>// document.writeln(str2.concat(&#8216;有限会社&#8217;));//Wingsプロジェクト有限会社<br />
+// document.writeln(str2.length);//11(日本語も一文字と換算)</p>
+<p>// //substring,sliceとsubstrの違い。前者は番目を返す。後者は番目から文字数を返す<br />
+// // substringとsliceの違い<br />
+// var str = &#8216;WINGSプロジェクト&#8217;;<br />
+// document.writeln(str.substring(8.5));//プロジ（6~8文字目を抽出）引数startと引数endをend+1、start-1文字目までを抽出<br />
+// document.writeln(str.slice(8.5));//空文字。入れ替えはしない</p>
+<p>// var str = &#8216;WINDOWプロジェクト&#8217;;<br />
+// document.writeln(str.substring(5,-2));//WINDO(1~5番目を抽出)substringは-2を0とみなしend、startを交換するから0から5番目までを抽出<br />
+// document.writeln(str.slice(5,-2));//(5,9)になる。負の数は後方の文字数とみなす。-2は後方から3文字目、つまり9文字目slice(5,-2)はstr.slice(5,9)と同じ動作をする</p>
+<p>// Arrayオブジェクト</p>
+<p>// var ary1 = ['Sato','Takae','Osada','Hio','Saitoh'];<br />
+// var ary2 = ['Yabuki','Aoki','Moriyama','Yamada'];</p>
+<p>// document.writeln(ary1.concat(ary2));<br />
+// //Sato,Takae,Osada,Hio,Saitoh,Yabuki,Aoki,Moriyama,Yamada　配列通しで繋げる<br />
+// document.writeln(ary1.join(&#8216;/&#8217;));<br />
+// //Sato/Takae/Osada/Hio/Saitoh　第一引数で繋げる<br />
+// document.writeln(ary1.slice(1));//Takae,Osada,Hio,Saitoh Satoを削除<br />
+// document.writeln(ary1.slice(1,2));//Takae<br />
+// document.writeln(ary1.splice(1,2,&#8217;kakeya&#8217;,&#8217;Yamaguchi&#8217;));<br />
+// //Takae,Osada(置き換え対象の要素を取得)<br />
+// document.writeln(ary1);<br />
+// //Sato,kakeya,Yamaguchi,Hio,Saitoh(置き換え後の配列)</p>
+<p>// document.writeln(ary1.pop());//Saitoh(削除した要素)</p>
+	</div><!-- .entry-content -->
+	
+</article><!-- #post-## -->
+	<nav class="navigation post-navigation" role="navigation">
+		<h1 class="screen-reader-text">投稿ナビゲーション</h1>
+		<div class="nav-links">
+			<a href="http://kenjimorita.jp/bibouroku_4/" rel="prev"><span class="meta-nav">前の投稿</span>備忘録:4「文字列の最後の部分が,だった場合それを抜いた文字列を抽出する」等</a><a href="http://kenjimorita.jp/tyuutounohyousiki/" rel="next"><span class="meta-nav">次の投稿</span>中東の標識</a>		</div><!-- .nav-links -->
+	</nav><!-- .navigation -->
+	
+<div id="comments" class="comments-area">
+
+	
+	<h2 class="comments-title">
+		「備忘録:5 Array、Stringオブジェクトメソッド」への2件のフィードバック	</h2>
+
+	
+	<ol class="comment-list">
+				<li id="comment-46" class="comment even thread-even depth-1 parent">
+			<article id="div-comment-46" class="comment-body">
+				<footer class="comment-meta">
+					<div class="comment-author vcard">
+						<img alt='' src="http://kenjimorita.jp/wp-content/plugins/lazy-load/images/1x1.trans.gif" data-lazy-src="http://0.gravatar.com/avatar/6a202f56e2c67cdc6c76b8bff359e12c?s=34&amp;d=http%3A%2F%2F0.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D34&amp;r=G" class='avatar avatar-34 photo' height='34' width='34' /><noscript><img alt='' src="http://0.gravatar.com/avatar/6a202f56e2c67cdc6c76b8bff359e12c?s=34&amp;d=http%3A%2F%2F0.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D34&amp;r=G" class='avatar avatar-34 photo' height='34' width='34' /></noscript>						<b class="fn">ミカ</b> <span class="says">より:</span>					</div><!-- .comment-author -->
+
+					<div class="comment-metadata">
+						<a href="http://kenjimorita.jp/bibouroku_5/#comment-46">
+							<time datetime="2014-06-23T01:00:10+00:00">
+								2014年6月23日 01:00							</time>
+						</a>
+											</div><!-- .comment-metadata -->
+
+									</footer><!-- .comment-meta -->
+
+				<div class="comment-content">
+					<p>モリケンさん、またこんばんは(^_-)☆<br />
+プログラム？ってひらがなとかもいれるんですねぇ(*^.^*)</p>
+				</div><!-- .comment-content -->
+
+				<div class="reply">
+					<a class='comment-reply-link' href='/bibouroku_5/?replytocom=46#respond' onclick='return addComment.moveForm("div-comment-46", "46", "respond", "5317")'>返信</a>				</div><!-- .reply -->
+			</article><!-- .comment-body -->
+<ol class="children">
+		<li id="comment-55" class="comment byuser comment-author-kenjimorita bypostauthor odd alt depth-2">
+			<article id="div-comment-55" class="comment-body">
+				<footer class="comment-meta">
+					<div class="comment-author vcard">
+						<img alt='' src="http://kenjimorita.jp/wp-content/plugins/lazy-load/images/1x1.trans.gif" data-lazy-src="http://1.gravatar.com/avatar/90a8a15ecee99737c8067b6c4495f530?s=34&amp;d=http%3A%2F%2F1.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D34&amp;r=G" class='avatar avatar-34 photo' height='34' width='34' /><noscript><img alt='' src="http://1.gravatar.com/avatar/90a8a15ecee99737c8067b6c4495f530?s=34&amp;d=http%3A%2F%2F1.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D34&amp;r=G" class='avatar avatar-34 photo' height='34' width='34' /></noscript>						<b class="fn">kenjimorita</b> <span class="says">より:</span>					</div><!-- .comment-author -->
+
+					<div class="comment-metadata">
+						<a href="http://kenjimorita.jp/bibouroku_5/#comment-55">
+							<time datetime="2014-07-01T22:41:06+00:00">
+								2014年7月1日 22:41							</time>
+						</a>
+											</div><!-- .comment-metadata -->
+
+									</footer><!-- .comment-meta -->
+
+				<div class="comment-content">
+					<p>ミカさん。プログラムはひらがないれません笑　ひらがな箇所はコメントアウトというものです。</p>
+				</div><!-- .comment-content -->
+
+				<div class="reply">
+					<a class='comment-reply-link' href='/bibouroku_5/?replytocom=55#respond' onclick='return addComment.moveForm("div-comment-55", "55", "respond", "5317")'>返信</a>				</div><!-- .reply -->
+			</article><!-- .comment-body -->
+</li><!-- #comment-## -->
+</ol><!-- .children -->
+</li><!-- #comment-## -->
+	</ol><!-- .comment-list -->
+
+	
+	
+	
+									<div id="respond" class="comment-respond">
+				<h3 id="reply-title" class="comment-reply-title">コメントを残す <small><a rel="nofollow" id="cancel-comment-reply-link" href="/bibouroku_5/#respond" style="display:none;">コメントをキャンセル</a></small></h3>
+									<form action="http://kenjimorita.jp/wp-comments-post.php" method="post" id="commentform" class="comment-form" novalidate>
+																			<p class="comment-notes">メールアドレスが公開されることはありません。</p>							<p class="comment-form-author"><label for="author">名前</label> <input id="author" name="author" type="text" value="" size="30" /></p>
+<p class="comment-form-email"><label for="email">メールアドレス</label> <input id="email" name="email" type="email" value="" size="30" /></p>
+<p class="comment-form-url"><label for="url">ウェブサイト</label> <input id="url" name="url" type="url" value="" size="30" /></p>
+												<p class="comment-form-comment"><label for="comment">コメント</label> <textarea id="comment" name="comment" cols="45" rows="8" aria-required="true"></textarea></p>						<p class="form-allowed-tags">次の<abbr title="HyperText Markup Language">HTML</abbr> タグと属性が使えます:  <code>&lt;a href=&quot;&quot; title=&quot;&quot;&gt; &lt;abbr title=&quot;&quot;&gt; &lt;acronym title=&quot;&quot;&gt; &lt;b&gt; &lt;blockquote cite=&quot;&quot;&gt; &lt;cite&gt; &lt;code&gt; &lt;del datetime=&quot;&quot;&gt; &lt;em&gt; &lt;i&gt; &lt;q cite=&quot;&quot;&gt; &lt;strike&gt; &lt;strong&gt; </code></p>						<p class="form-submit">
+							<input name="submit" type="submit" id="submit" value="コメントを送信" />
+							<input type='hidden' name='comment_post_ID' value='5317' id='comment_post_ID' />
+<input type='hidden' name='comment_parent' id='comment_parent' value='0' />
+						</p>
+						<p style="display: none;"><input type="hidden" id="akismet_comment_nonce" name="akismet_comment_nonce" value="3732eff913" /></p><script type='text/javascript' src='http://kenjimorita.jp/wp-content/plugins/akismet/_inc/form.js?ver=3.0.0'></script>
+<p style="display: none;"><input type="hidden" id="ak_js" name="ak_js" value="55"/></p>					</form>
+							</div><!-- #respond -->
+			
+</div><!-- #comments -->
+		</div><!-- #content -->
+	</div><!-- #primary -->
+
+<div id="content-sidebar" class="content-sidebar widget-area" role="complementary">
+	</div><!-- #content-sidebar -->
+<div id="secondary">
+		<h2 class="site-description">毎日に「ぷっ（笑）」を。よしもとクリエーティブエージェンシー所属もりたけんじのブログ</h2>
+	
+	
+		<div id="primary-sidebar" class="primary-sidebar widget-area" role="complementary">
+		<aside id="categories-2" class="widget widget_categories"><h1 class="widget-title">カテゴリー</h1>		<ul>
+	<li class="cat-item cat-item-39"><a href="http://kenjimorita.jp/category/sitemap/" title="こちらは全ページをまとめたもりたけんじの武骨日記サイトマップです。
+お時間ありましたらご拝読ください。">サイトマップ</a> (1)
+</li>
+	<li class="cat-item cat-item-5"><a href="http://kenjimorita.jp/category/kenjimorita/" title="こちらは「もりたけんじ」というカテゴリーです。
+はい。
+多分ですが、全部読んだら吐くと思います。
+傍らにビニール袋を用意することをお勧めします。
+">もりたけんじ</a> (433)
+</li>
+	<li class="cat-item cat-item-22"><a href="http://kenjimorita.jp/category/pu/" title="こちらは「ぷ」のカテゴリーです。
+分かりやすくに申し上げますと「ぷ」です。
+
+">ぷ</a> (247)
+</li>
+	<li class="cat-item cat-item-21"><a href="http://kenjimorita.jp/category/nitijo/" title="こちらは「日常話」カテゴリーです。
+わたしの日常に起こるちょっとしたことを書いています。
+
+">日常話</a> (252)
+</li>
+	<li class="cat-item cat-item-11"><a href="http://kenjimorita.jp/category/friend/" title="こちらは「周りの話」のカテゴリーです。
+自分の周りの芸人や友達の「ぷ」を綴っています。
+">周りの話</a> (216)
+</li>
+	<li class="cat-item cat-item-24"><a href="http://kenjimorita.jp/category/tiisaikoro/" title="こちらは「母親・小さい頃の話」のカテゴリーです。
+今思うと面白い家族でしたし特異な幼少期を過ごしたと思います。
+決して引かないでください。
+身を削った「ぷ」です。">母親・小さい頃の話</a> (36)
+</li>
+	<li class="cat-item cat-item-8"><a href="http://kenjimorita.jp/category/shimanagashiradio/" title="こちらは「島流しラジオ」のカテゴリーです。
+ラジオです。
+まぁちょっと聴いてみてください。
+あなたがもし電車の中で立っている状態でしたら暇つぶしにでも。">島流しラジオ</a> (29)
+</li>
+	<li class="cat-item cat-item-12"><a href="http://kenjimorita.jp/category/%e6%83%b3/" title="こちらは「想」のカテゴリーです。
+たまに面白くもない真面目に思うことをつらつらと書いてしまいます。
+恥ずかしいので読まないでください。
+
+">想</a> (28)
+</li>
+	<li class="cat-item cat-item-10"><a href="http://kenjimorita.jp/category/journey/" title="こちらは「旅」のカテゴリーです。
+旅はわたしに気付かせてくれました。
+たとえ海外に行かずともあなたの周りにいる価値観が会わない人を理解する事。
+それこそが旅である。
+旅は続けなくてはならない。ってね。">旅</a> (215)
+<ul class='children'>
+	<li class="cat-item cat-item-34"><a href="http://kenjimorita.jp/category/journey/uae/" title="UAE に含まれる投稿をすべて表示">UAE</a> (5)
+</li>
+	<li class="cat-item cat-item-3"><a href="http://kenjimorita.jp/category/journey/india/" title="こちらは「インド」のカテゴリーです。
+今ちょっと文章が読みづらくなっています。すみません。
+4月中旬まで待ってください。">インド</a> (71)
+</li>
+	<li class="cat-item cat-item-37"><a href="http://kenjimorita.jp/category/journey/oman/" title="オマーン に含まれる投稿をすべて表示">オマーン</a> (6)
+</li>
+	<li class="cat-item cat-item-36"><a href="http://kenjimorita.jp/category/journey/kataru/" title="カタール に含まれる投稿をすべて表示">カタール</a> (4)
+</li>
+	<li class="cat-item cat-item-16"><a href="http://kenjimorita.jp/category/journey/kannbojia/" title="こちらは「カンボジア」のカテゴリーです。
+今ちょっと文章が読みづらくなっています。すみません。
+4月中旬まで待ってください。">カンボジア</a> (16)
+</li>
+	<li class="cat-item cat-item-17"><a href="http://kenjimorita.jp/category/journey/tai/" title="こちらは「タイ」のカテゴリーです。
+今ちょっと文章が読みづらくなっています。すみません。
+4月中旬まで待ってください。">タイ</a> (18)
+</li>
+	<li class="cat-item cat-item-35"><a href="http://kenjimorita.jp/category/journey/baren/" title="バーレーン に含まれる投稿をすべて表示">バーレーン</a> (13)
+</li>
+	<li class="cat-item cat-item-14"><a href="http://kenjimorita.jp/category/journey/betonamu/" title="こちらは「ベトナム」のカテゴリーです。
+今ちょっと文章が読みづらくなっています。すみません。
+4月中旬まで待ってください。">ベトナム</a> (5)
+</li>
+	<li class="cat-item cat-item-13"><a href="http://kenjimorita.jp/category/journey/%e5%8f%b0%e6%b9%be/" title="こちらは「台湾」のカテゴリーです。
+今ちょっと文章が読みづらくなっています。すみません。
+4月中旬まで待ってください。">台湾</a> (24)
+</li>
+	<li class="cat-item cat-item-15"><a href="http://kenjimorita.jp/category/journey/kannkoku/" title="こちらは「韓国」のカテゴリーです。
+今ちょっと文章が読みづらくなっています。すみません。
+4月中旬まで待ってください。">韓国</a> (20)
+</li>
+</ul>
+</li>
+	<li class="cat-item cat-item-19"><a href="http://kenjimorita.jp/category/%e6%9c%ac/" title="こちらは「本」のカテゴリーです。
+本好きなんです。
+好きなものは紹介したくなるみたいです。">本</a> (20)
+</li>
+	<li class="cat-item cat-item-20"><a href="http://kenjimorita.jp/category/%e9%ba%ba%e6%97%85/" title="こちらは「麺旅」のカテゴリーです。
+はい。わたしが行った事のあるラーメンです。
+好きなんです。
+つけめんは僕あんまです。">麺旅</a> (41)
+</li>
+	<li class="cat-item cat-item-41"><a href="http://kenjimorita.jp/category/web%e5%82%99%e5%bf%98%e9%8c%b2/" title="web備忘録 に含まれる投稿をすべて表示">web備忘録</a> (5)
+</li>
+	<li class="cat-item cat-item-44"><a href="http://kenjimorita.jp/category/%e5%87%9d%e8%a6%96%e3%81%8a%e3%81%98%e3%81%95%e3%82%93/" title="凝視おじさん に含まれる投稿をすべて表示">凝視おじさん</a> (4)
+</li>
+		</ul>
+</aside>	</div><!-- #primary-sidebar -->
+	</div><!-- #secondary -->
+
+		</div><!-- #main -->
+
+		<footer id="colophon" class="site-footer" role="contentinfo">
+
+			
+			<div class="site-info">
+								<a href="http://ja.wordpress.org/">Proudly powered by WordPress</a>
+			</div><!-- .site-info -->
+		</footer><!-- #colophon -->
+	</div><!-- #page -->
+	<script>
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+	  ga('create', 'UA-47704758-1', 'kenjimorita.jp');
+	  ga('send', 'pageview');
+
+	</script>
+	<script type='text/javascript' src='http://kenjimorita.jp/wp-content/plugins/lazy-load/js/jquery.sonar.min.js?ver=0.5'></script>
+<script type='text/javascript' src='http://kenjimorita.jp/wp-content/plugins/lazy-load/js/lazy-load.js?ver=0.5'></script>
+<script type='text/javascript' src='http://kenjimorita.jp/wp-includes/js/comment-reply.min.js?ver=3.9.2'></script>
+<script type='text/javascript' src='http://kenjimorita.jp/wp-content/themes/twentyfourteen/js/functions.js?ver=20131209'></script>
+<!-- Generated in 1.770 seconds. Made 16 queries to database and 10 cached queries. Memory used - 23.77MB -->
+<!-- Cached by DB Cache Reloaded Fix -->
+</body>
+</html>
+<!-- Quick Cache file built for (http://kenjimorita.jp/bibouroku_5/) in 1.76940 seconds, on: Aug 22nd, 2014 @ 9:26 pm UTC. -->
+<!-- This Quick Cache file will auto-expire (and be rebuilt) on: Aug 23rd, 2014 @ 9:26 pm UTC (based on your configured expiration time). -->
