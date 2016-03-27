@@ -30,12 +30,6 @@
 	<script src="<?php echo get_template_directory_uri(); ?>/js/html5.js"></script>
 	<![endif]-->
 	<?php wp_head(); ?>
-<!-- 	<link rel="stylesheet" href="http://kenjimorita.jp/wp-content/themes/twentyfourteen/css/snap.css">
- -->
-
-	<!-- <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script> -->
-	<!--<script type="text/javascript" src="http://kenjimorita.jp/wp-content/themes/twentyfourteen/js/snap.min.js"></script>-->
-	<!-- <script type="text/javascript" src="//typesquare.com/accessor/script/typesquare.js?QcloNBtHR6U%3D" charset="utf-8"></script> -->
 	<meta name="google-site-verification" content="aF7Nnl0otsSvBoLQc2c6ymTPu2K8bcv_292nRkpOUTA" />
 </head>
 

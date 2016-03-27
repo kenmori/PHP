@@ -59,6 +59,9 @@ font-family: "¥Ò¥é¥®¥ÎÃ÷³¯ W6 JIS2004";
 
 /*smartphone*/
 @media screen and (max-width: 400px){
+	.entry-header {
+		padding-top: 10px;
+	}
 	#categories-2 li {
 	padding: 5% 0px;
 	}
@@ -88,7 +91,7 @@ font-family: "¥Ò¥é¥®¥ÎÃ÷³¯ W6 JIS2004";
 		display:none;
 	}
 	.list-view .site-content .entry-title{
-		margin-bottom:0;
+		/*margin-bottom:0;*/
 	}
 	.list-view .site-content .hentry{
 		padding:10px 0 9px;
@@ -474,4 +477,8 @@ margin-top: 16px;
 	.primary-navigation ul ul a:hover, .primary-navigation ul ul li.focus > a{
 		text-decoration: underline;
 	}
+}
+
+.adsbygoogle {
+	background: #fff;
 }
