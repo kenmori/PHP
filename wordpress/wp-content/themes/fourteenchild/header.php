@@ -33,7 +33,6 @@
 </head>
 
 <body <?php body_class(); ?>>
-	<?php include_once("analyticstracking.php"); ?>
 <div id="page" class="hfeed site">
 	<?php if(is_front_page()): ?>
 		<?php if ( get_header_image() ) : ?>
