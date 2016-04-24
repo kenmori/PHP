@@ -28,7 +28,15 @@
 			endif;
 		?>
 		<?php the_tags( '<footer class="entry-meta"><span class="tag-links">', '', '</span></footer>' ); ?>
-
+                <?php
+            $hours = 72; //Newを表示させたい期間の時間
+            $today = date_i18n('U');
+            $entry = get_the_time('U');
+            $kiji = date('U',($today - $entry)) / 3600 ;
+            if( $hours > $kiji ){
+            echo '<span style="color:red;font-weight:bold;">New!</span>';
+            }
+            ?>
 		<div class="entry-meta">
 			<?php
 				if ( 'post' == get_post_type() )
@@ -43,6 +51,7 @@
 				edit_post_link( __( 'Edit', 'twentyfourteen' ), '<span class="edit-link">', '</span>' );
 			?>
 		</div><!-- .entry-meta -->
+
 	</header><!-- .entry-header -->
 
 	<?php if ( is_search() ) : ?>
@@ -51,6 +60,14 @@
 	</div><!-- .entry-summary -->
 	<?php else : ?>
 	<div class="entry-content">
+		<?php if(is_home() && !is_paged()): ?>
+			<?php else : ?>
+				<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script> <!-- morita -->
+				<ins class="adsbygoogle" style="display:block" data-ad-client="[あなたのコード]" data-ad-slot="[あなたのコード]" data-ad-format="auto"></ins>
+				<script>
+				(adsbygoogle = window.adsbygoogle || []).push({});
+				</script>
+		<?php endif; ?>
 		<?php
 			the_content( __( 'Continue reading <span class="meta-nav">&rarr;</span>', 'twentyfourteen' ) );
 			wp_link_pages( array(

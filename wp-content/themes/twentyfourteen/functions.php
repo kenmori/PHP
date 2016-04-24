@@ -233,7 +233,7 @@ function twentyfourteen_scripts() {
 	wp_enqueue_style( 'twentyfourteen-lato', twentyfourteen_font_url(), array(), null );
 
 	// Add Genericons font, used in the main stylesheet.
-	// wp_enqueue_style( 'genericons', get_template_directory_uri() . '/genericons/genericons.css', array(), '3.0.2' );
+	wp_enqueue_style( 'genericons', get_template_directory_uri() . '/genericons/genericons.css', array(), '3.0.2' );
 
 	// Load our main stylesheet.
 	wp_enqueue_style( 'twentyfourteen-style', get_stylesheet_uri(), array( 'genericons' ) );
@@ -522,19 +522,3 @@ require get_template_directory() . '/inc/customizer.php';
 if ( ! class_exists( 'Featured_Content' ) && 'plugins.php' !== $GLOBALS['pagenow'] ) {
 	require get_template_directory() . '/inc/featured-content.php';
 }
-//
-// // 絵文字使わないのでwp_headで読んでいるwp-includes/default-filter.php内の記述を消している
-
-
-// remove_action('wp_head', 'print_emoji_detection_script', 7);
-// remove_action('wp_print_styles', 'print_emoji_styles');
-// remove_action('wp_head', 'rel_canonical');
-// function my_delete_local_jquery() {
-//     wp_deregister_script('jquery');
-// }
-// add_action( 'wp_enqueue_scripts', 'my_delete_local_jquery' );
-//
-// function my_delete_plugin_files() {
-//     wp_dequeue_style('wp-pagenavi','dashicons','admin-bar','genericons','twentyfourteen-lato','open-sans');
-// }
-// add_action( 'wp_enqueue_scripts', 'my_delete_plugin_files' );
