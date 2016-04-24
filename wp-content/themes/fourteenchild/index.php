@@ -18,6 +18,50 @@ get_header(); ?>
 
 <div id="contentwarap" class="snap-">
 	<div id="main-content" class="main-content">
+
+<!--
+<div id="opensociales">
+  <a class="smedia email" href=""><span></span></a>
+  <a class="smedia facebook" href="https://www.facebook.com/kennji.morita"><span></span></a>
+  <a class="smedia twitter" href="https://twitter.com/moritakennji"><span></span></a>
+  <a class="smedia instagram" href="#slide"><span></span></a>
+</div> -->
+<script>
+// $(function(){
+// 	$('#opensociales').hide();
+// 	$(function(){
+// 		$(window).scroll(function(){
+// 			if($(this).scrollTop()>5){
+// 				$('#opensociales').fadeIn();
+// 			}else{
+// 				$('#opensociales').fadeOut();
+// 			}
+// 		});
+// 	});
+//  });
+// $(function(){
+//   	$('#opensociales').click(function (e){
+//       	e.preventDefault();
+// 	    $(this).toggleClass('opened');
+// 	});
+// });
+// $(function(){
+// 	$('.email').on('click',function (e){
+// 	  	e.preventDefault();
+// 		$('body,html').animate({
+// 			scrollTop:0
+// 		},500);
+// 	});
+// 	$('.twitter').on('click',function (e){
+// 			window.location.href= 'https://twitter.com/moritakennji';
+// 	});
+// 	$('.facebook').on('click',function (e){
+// 		window.location.href= 'https://www.facebook.com/kennji.morita';
+// 	});
+
+// });
+</script>
+
 <!-- 	<?php
 		// if ( is_front_page() && twentyfourteen_has_featured_posts() ) {
 		// 	// Include the featured content template.

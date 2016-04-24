@@ -32,9 +32,6 @@
 	  ga('send', 'pageview');
 
 	</script>
-	<!--[if lt IE 9]>
-	<script src="<?php echo get_template_directory_uri(); ?>/js/html5.js"></script>
-	<![endif]-->
   <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
   <script type="text/javascript" src="//typesquare.com/accessor/script/typesquare.js?QcloNBtHR6U%3D" charset="utf-8"></script>
 	<?php wp_footer(); ?>

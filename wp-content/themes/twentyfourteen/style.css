@@ -599,6 +599,10 @@ img.size-large,
 	max-width: 100%;
 }
 
+.wsbl_twitter {
+  width: auto!important;
+}
+
 /* Make sure embeds and iframes fit their containers */
 
 embed,
@@ -2960,6 +2964,13 @@ a.post-thumbnail:hover {
 	width: device-width;
 }
 
+
+/*
+
+ screen400
+
+*/
+
 @media screen and (max-width: 400px) {
 	.list-view .site-content .post-thumbnail {
 		background: none;
@@ -2971,6 +2982,16 @@ a.post-thumbnail:hover {
 	  background:#FFFFC6;
 	  padding:10px;
 	  display:block;
+	}
+	.adsbygoogle {
+		background:#fff!important;
+		margin-bottom: 40px;
+	}
+
+	.code {
+		background:#efefef;
+		padding:10px;
+		margin:10px 0;
 	}
 
 	.list-view .site-content .post-thumbnail img {
@@ -3154,6 +3175,24 @@ a.post-thumbnail:hover {
 		border-top: 0;
 		padding-top: 0;
 	}
+
+	.catsay {
+	  background:#FFFFC6;
+	  padding:10px;
+      margin: 10px 0;
+	  display:block;
+	}
+	.adsbygoogle {
+		background:#fff!important;
+		margin-bottom: 40px;
+	}
+
+	.code {
+		background:#efefef;
+		padding:10px;
+		margin:10px 0;
+	}
+
 
 	.archive-header,
 	.page-header {
@@ -4193,5 +4232,27 @@ a.post-thumbnail:hover {
 .catsay {
   background:#FFFFC6;
   padding:10px;
+  margin: 10px 0;
   display:block;
+}
+
+.adsbygoogle {
+	background:#fff!important;
+
+}
+
+.code {
+	background:#efefef;
+	padding:10px;
+	margin:10px 0;
+}
+
+@media only screen and (min-width:800px)and (max-width:3000px) {
+    .adsbygoogle {
+        width: 640px;
+        height: 90px;
+    }
+		.content-sidebar {
+			overflow: hidden;
+		}
 }
